@@ -1,0 +1,2798 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+	GridViewScroll with jQuery
+</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="tablescroller.js"></script>
+    <!--link href="GridviewScroll.css" rel="stylesheet" /-->
+    <style type="text/css">
+    	BODY,TD
+		{
+		    font-family: Tahoma, Arial, Verdana;
+		    font-weight: normal;
+		    font-size: 12px;
+		    color: #333333;
+		}
+      table {
+      border-collapse: collapse;
+}
+
+th {
+      position: relative;
+      text-align: center;
+      z-index: 20;
+      background-color: #ccf;
+      cursor:pointer;
+}
+td, th {
+      margin: 0px;
+      padding: 2px 5px 2px 5px;
+}
+td {
+      background-color: #fff;
+}
+
+tr {
+      margin: 0px;
+      padding: 0px;
+}
+    </style>
+    <script type="text/javascript">
+          var ts = new tablescroller('roster',true);
+    </script>
+</head>
+<body>
+	<div class="container" style="margin-top:20px">
+		<div class="row">
+			<div class="col-md-3">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						J4NCOEG
+					</div>
+				  <div class="panel-body">
+				    Basic panel example
+				  </div>
+				</div>
+			</div>
+			<div class="col-md-9">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						TABLE
+					</div>
+					<div class="panel-body">
+					<div class='block-content'>
+
+
+<div class='block-content table-responsive'  style="max-height: 700px !important;">
+   <table id="roster" class="table table-bordered table-striped">
+      <thead>
+         <tr>
+            <th rowspan='2'>No</th>
+            <th rowspan='2' style='width:500px'>Ruangan</th>
+            <th colspan='11' style='text-align:center'>Senin</th>
+            <th colspan='11' style='text-align:center'>Selasa</th>
+            <th colspan='11' style='text-align:center'>Rabu</th>
+            <th colspan='11' style='text-align:center'>Kamis</th>
+            <th colspan='11' style='text-align:center'>Jumat</th>
+            <th colspan='11' style='text-align:center'>Sabtu</th>
+         </tr>
+         <tr>
+            <th style='width:300px !important;'>07:00:00</th>
+            <th style='width:300px !important;'>08:00:00</th>
+            <th style='width:300px !important;'>09:00:00</th>
+            <th style='width:300px !important;'>10:00:00</th>
+            <th style='width:300px !important;'>11:00:00</th>
+            <th style='width:300px !important;'>12:00:00</th>
+            <th style='width:300px !important;'>13:00:00</th>
+            <th style='width:300px !important;'>14:00:00</th>
+            <th style='width:300px !important;'>15:00:00</th>
+            <th style='width:300px !important;'>16:00:00</th>
+            <th style='width:300px !important;'>17:00:00</th>
+            <th style='width:300px !important;'>07:00:00</th>
+            <th style='width:300px !important;'>08:00:00</th>
+            <th style='width:300px !important;'>09:00:00</th>
+            <th style='width:300px !important;'>10:00:00</th>
+            <th style='width:300px !important;'>11:00:00</th>
+            <th style='width:300px !important;'>12:00:00</th>
+            <th style='width:300px !important;'>13:00:00</th>
+            <th style='width:300px !important;'>14:00:00</th>
+            <th style='width:300px !important;'>15:00:00</th>
+            <th style='width:300px !important;'>16:00:00</th>
+            <th style='width:300px !important;'>17:00:00</th>
+            <th style='width:300px !important;'>07:00:00</th>
+            <th style='width:300px !important;'>08:00:00</th>
+            <th style='width:300px !important;'>09:00:00</th>
+            <th style='width:300px !important;'>10:00:00</th>
+            <th style='width:300px !important;'>11:00:00</th>
+            <th style='width:300px !important;'>12:00:00</th>
+            <th style='width:300px !important;'>13:00:00</th>
+            <th style='width:300px !important;'>14:00:00</th>
+            <th style='width:300px !important;'>15:00:00</th>
+            <th style='width:300px !important;'>16:00:00</th>
+            <th style='width:300px !important;'>17:00:00</th>
+            <th style='width:300px !important;'>07:00:00</th>
+            <th style='width:300px !important;'>08:00:00</th>
+            <th style='width:300px !important;'>09:00:00</th>
+            <th style='width:300px !important;'>10:00:00</th>
+            <th style='width:300px !important;'>11:00:00</th>
+            <th style='width:300px !important;'>12:00:00</th>
+            <th style='width:300px !important;'>13:00:00</th>
+            <th style='width:300px !important;'>14:00:00</th>
+            <th style='width:300px !important;'>15:00:00</th>
+            <th style='width:300px !important;'>16:00:00</th>
+            <th style='width:300px !important;'>17:00:00</th>
+            <th style='width:300px !important;'>07:00:00</th>
+            <th style='width:300px !important;'>08:00:00</th>
+            <th style='width:300px !important;'>09:00:00</th>
+            <th style='width:300px !important;'>10:00:00</th>
+            <th style='width:300px !important;'>11:00:00</th>
+            <th style='width:300px !important;'>12:00:00</th>
+            <th style='width:300px !important;'>13:00:00</th>
+            <th style='width:300px !important;'>14:00:00</th>
+            <th style='width:300px !important;'>15:00:00</th>
+            <th style='width:300px !important;'>16:00:00</th>
+            <th style='width:300px !important;'>17:00:00</th>
+            <th style='width:300px !important;'>07:00:00</th>
+            <th style='width:300px !important;'>08:00:00</th>
+            <th style='width:300px !important;'>09:00:00</th>
+            <th style='width:300px !important;'>10:00:00</th>
+            <th style='width:300px !important;'>11:00:00</th>
+            <th style='width:300px !important;'>12:00:00</th>
+            <th style='width:300px !important;'>13:00:00</th>
+            <th style='width:300px !important;'>14:00:00</th>
+            <th style='width:300px !important;'>16:00:00</th>
+            <th style='width:300px !important;'>17:00:00</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>1</td>
+            <td>-</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+         </tr>
+         <tr>
+            <td>2</td>
+            <td>Aula</td>
+            <td colspan="2" style="background-color: #040692 !important;border-color: #E0E08D !important;color:#ffffff !important"  class='open-detail-jadwal' data-id='1144'><strong>Pancasila dan Kewarganegaraan</strong><br>07:00:00 - 08:40:00 WIB<br>Dr. H. Chairul Anwar, M.Pd.<br>TPB</td>
+            <td   ></td>
+            <td colspan="2" style="background-color: #d10808 !important;border-color: #E0E08D !important;color:#ffffff !important"  class='open-detail-jadwal' data-id='1326'><strong>Teknik Presentasi Arsitektur</strong><br>10:00:00 - 11:40:00 WIB<br>Rendy Perdana Khidmat<br>AR</td>
+            <td   ></td>
+            <td colspan="2" style="background-color: #040692 !important;border-color: #E0E08D !important;color:#ffffff !important"  class='open-detail-jadwal' data-id='1332'><strong>Pemahaman Teks Akademik</strong><br>13:00:00 - 14:40:00 WIB<br>Ujang Suparman, M.A.Ph.D<br>TPB</td>
+            <td colspan="2" style="background-color: #040692 !important;border-color: #E0E08D !important;color:#ffffff !important"  class='open-detail-jadwal' data-id='1295'><strong>Matematika II</strong><br>15:00:00 - 16:40:00 WIB<br>Hadi Teguh Yudistira, S.T., Ph.D.<br>TPB</td>
+            <td   ></td>
+            <td   ></td>
+            <td colspan="2" style="background-color: #040692 !important;border-color: #E0E08D !important;color:#ffffff !important"  class='open-detail-jadwal' data-id='1295'><strong>Matematika II</strong><br>08:00:00 - 09:40:00 WIB<br>Hadi Teguh Yudistira, S.T., Ph.D.<br>TPB</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+         </tr>
+         <tr>
+            <td>3</td>
+            <td>Ex-Kelas</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td colspan="3" style="background-color: #bdb9b9 !important;border-color: #E0E08D !important;color:#000000 !important"  class='open-detail-jadwal' data-id='1079'><strong>Sistem Informasi Geografik I</strong><br>14:00:00 - 16:30:00 WIB<br>Agel Vidian Krama, S.Pd., M.Si.<br>GT</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td colspan="2" style="background-color: #040692 !important;border-color: #E0E08D !important;color:#ffffff !important"  class='open-detail-jadwal' data-id='1140'><strong>Agama dan Etika Protestan</strong><br>11:00:00 - 12:40:00 WIB<br>Naek Siregar, S.H., M.H.<br>TPB</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+         </tr>
+         <tr>
+            <td>4</td>
+            <td>Ex-Kelas</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td colspan="2" style="background-color: #040692 !important;border-color: #E0E08D !important;color:#ffffff !important"  class='open-detail-jadwal' data-id='1142'><strong>Agama dan Etika Katolik</strong><br>11:00:00 - 12:40:00 WIB<br>Prof. FX. Susilo<br>TPB</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+         </tr>
+         <tr>
+            <td>5</td>
+            <td>Ex-Kelas</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+         </tr>
+         <tr>
+            <td>6</td>
+            <td>Lab Geomatika</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+         </tr>
+         <tr>
+            <td>7</td>
+            <td>Ex-Kelas</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+         </tr>
+         <tr>
+            <td>8</td>
+            <td>Lab Elektro</td>
+            <td colspan="1" style="background-color: #272cba !important;border-color: #E0E08D !important;color:#ffffff !important"  class='open-detail-jadwal' data-id='1117'><strong>Praktikum Elektronika</strong><br>07:00:00 - 07:50:00 WIB<br>Kiki Kananda, M.T.<br>EL</td>
+            <td colspan="1" style="background-color: #272cba !important;border-color: #E0E08D !important;color:#ffffff !important"  class='open-detail-jadwal' data-id='1121'><strong>Praktikum Sistem Komunikasi</strong><br>08:00:00 - 08:50:00 WIB<br>Heriansyah, S.T., M.T.<br>EL</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td colspan="1" style="background-color: #272cba !important;border-color: #E0E08D !important;color:#ffffff !important"  class='open-detail-jadwal' data-id='1120'><strong>Praktikum Sistem Kendali</strong><br>13:00:00 - 13:50:00 WIB<br>Rudi Uswarman, S.T., M. Eng.<br>EL</td>
+            <td   ></td>
+            <td colspan="1" style="background-color: #272cba !important;border-color: #E0E08D !important;color:#ffffff !important"  class='open-detail-jadwal' data-id='1123'><strong>Praktikum Sistem Tenaga Elektrik</strong><br>15:00:00 - 15:50:00 WIB<br>Dean Corio, S.T., M.T.<br>EL</td>
+            <td   ></td>
+            <td   ></td>
+            <td colspan="1" style="background-color: #272cba !important;border-color: #E0E08D !important;color:#ffffff !important"  class='open-detail-jadwal' data-id='1119'><strong>Praktikum Sistem Mikroprosesor</strong><br>07:00:00 - 07:50:00 WIB<br>-<br>EL</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+         </tr>
+         <tr>
+            <td>9</td>
+            <td>Lab Fisika</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+         </tr>
+         <tr>
+            <td>10</td>
+            <td>Kelas C102</td>
+            <td colspan="2" style="background-color: #040692 !important;border-color: #E0E08D !important;color:#ffffff !important"  class='open-detail-jadwal' data-id='1388'><strong>Agama dan Etika Islam</strong><br>07:00:00 - 08:40:00 WIB<br>Dr. Idrus Ruslan, M.Ag.<br>TPB</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td colspan="2" style="background-color: #bdb9b9 !important;border-color: #E0E08D !important;color:#000000 !important"  class='open-detail-jadwal' data-id='1071'><strong>Ilmu Ukur Tanah II</strong><br>13:00:00 - 14:40:00 WIB<br>Ir. Agoes Soedomo, M.T.<br>GT</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td colspan="2" style="background-color: #bdb9b9 !important;border-color: #E0E08D !important;color:#000000 !important"  class='open-detail-jadwal' data-id='1071'><strong>Ilmu Ukur Tanah II</strong><br>07:00:00 - 08:40:00 WIB<br>Ir. Agoes Soedomo, M.T.<br>GT</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+         </tr>
+         <tr>
+            <td>11</td>
+            <td>Kelas C103</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td colspan="3" style="background-color: #008080 !important;border-color: #E0E08D !important;color:#f0eaea !important"  class='open-detail-jadwal' data-id='1143'><strong>MK Pilihan Geofisika Pertambangan</strong><br>10:00:00 - 12:30:00 WIB<br>Ruhul Firdaus, S.T., M.T.<br>TG</td>
+            <td colspan="3" style="background-color: #bdb9b9 !important;border-color: #E0E08D !important;color:#000000 !important"  class='open-detail-jadwal' data-id='1092'><strong>Manajemen Survei & Pemetaan</strong><br>13:00:00 - 15:30:00 WIB<br>Agung Pandi Nugroho, S.T., M.T.<br>GT</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+         </tr>
+         <tr>
+            <td>12</td>
+            <td>Lab Kimia</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+         </tr>
+         <tr>
+            <td>13</td>
+            <td>Kelas C105</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+         </tr>
+         <tr>
+            <td>14</td>
+            <td>Kelas C107</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td colspan="2" style="background-color: #ce741d !important;border-color: #E0E08D !important;color:#000000 !important"  class='open-detail-jadwal' data-id='1168'><strong>Dasar Pemrograman</strong><br>13:00:00 - 14:40:00 WIB<br>Hafiz Budi Firmansyah, S.Kom, M.Sc<br>IF</td>
+            <td colspan="2" style="background-color: #ce741d !important;border-color: #E0E08D !important;color:#000000 !important"  class='open-detail-jadwal' data-id='1169'><strong>Dasar Pemrograman</strong><br>15:00:00 - 16:40:00 WIB<br>Arkham Zahri Rakhman, S.Kom., M.Eng.<br>IF</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+         </tr>
+         <tr>
+            <td>15</td>
+            <td>Kelas C201</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td colspan="2" style="background-color: #040692 !important;border-color: #E0E08D !important;color:#ffffff !important"  class='open-detail-jadwal' data-id='1389'><strong>Agama dan Etika Islam</strong><br>10:00:00 - 11:40:00 WIB<br>Dr. Idrus Ruslan, M.Ag.<br>TPB</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+         </tr>
+         <tr>
+            <td>16</td>
+            <td>Kelas C202</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td colspan="2" style="background-color: #040692 !important;border-color: #E0E08D !important;color:#ffffff !important"  class='open-detail-jadwal' data-id='1386'><strong>Agama dan Etika Islam</strong><br>08:00:00 - 09:40:00 WIB<br>Dr. Idrus Ruslan, M.Ag.<br>TPB</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td colspan="2" style="background-color: #ce741d !important;border-color: #E0E08D !important;color:#000000 !important"  class='open-detail-jadwal' data-id='1170'><strong>Dasar Pemrograman</strong><br>07:00:00 - 08:40:00 WIB<br>Rajif Agung Yunmar, S.Kom., M.Cs.<br>IF</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+         </tr>
+         <tr>
+            <td>17</td>
+            <td>Kelas C203</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+         </tr>
+         <tr>
+            <td>18</td>
+            <td>Kelas C205</td>
+            <td colspan="2" style="background-color: #bdb9b9 !important;border-color: #E0E08D !important;color:#000000 !important"  class='open-detail-jadwal' data-id='1090'><strong>Medan Gayaberat Bumi</strong><br>07:00:00 - 08:40:00 WIB<br>Arif Rohman, S.T., M.T. <br>GT</td>
+            <td   ></td>
+            <td colspan="3" style="background-color: #008080 !important;border-color: #E0E08D !important;color:#f0eaea !important"  class='open-detail-jadwal' data-id='1136'><strong>MK Pilihan Seismik Inversi Reservoir</strong><br>10:00:00 - 12:30:00 WIB<br>Ruhul Firdaus, S.T., M.T.<br>TG</td>
+            <td colspan="2" style="background-color: #008080 !important;border-color: #E0E08D !important;color:#f0eaea !important"  class='open-detail-jadwal' data-id='1137'><strong>MK Pilihan Seismik Atribut Reservoir</strong><br>13:00:00 - 14:40:00 WIB<br>Handoyo, S.Si., M.T.<br>TG</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td colspan="2" style="background-color: #249211 !important;border-color: #E0E08D !important;color:#000000 !important"  class='open-detail-jadwal' data-id='1141'><strong>MK Pilihan Geologi Well Logging</strong><br>07:00:00 - 08:40:00 WIB<br>Bilal Alfarishi, B.Sc., M.Sc.<br>GL</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td colspan="3" style="background-color: #272cba !important;border-color: #E0E08D !important;color:#ffffff !important"  class='open-detail-jadwal' data-id='1110'><strong>Sistem Mikroprosesor</strong><br>08:00:00 - 10:30:00 WIB<br>Denny Hidayat Tri Nugroho, S.T., M.T.<br>EL</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+         </tr>
+         <tr>
+            <td>19</td>
+            <td>Kelas C206</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+         </tr>
+         <tr>
+            <td>20</td>
+            <td>Kelas C207</td>
+            <td colspan="3" style="background-color: #ce741d !important;border-color: #E0E08D !important;color:#000000 !important"  class='open-detail-jadwal' data-id='1151'><strong>Strategi Algoritma</strong><br>07:00:00 - 09:30:00 WIB<br>Rahman Indra Kesuma, S.Kom. M.Cs.<br>IF</td>
+            <td colspan="3" style="background-color: #ce741d !important;border-color: #E0E08D !important;color:#000000 !important"  class='open-detail-jadwal' data-id='1152'><strong>Sistem Paralel dan Terdistribusi</strong><br>10:00:00 - 12:30:00 WIB<br>Ardiansyah, ST, M.Eng, CCAI<br>IF</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td colspan="3" style="background-color: #ce741d !important;border-color: #E0E08D !important;color:#000000 !important"  class='open-detail-jadwal' data-id='1153'><strong>Sistem Operasi</strong><br>08:00:00 - 10:30:00 WIB<br>Ahmad Luky Ramdani<br>IF</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+         </tr>
+         <tr>
+            <td>21</td>
+            <td>Lab Komputer</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+         </tr>
+         <tr>
+            <td>22</td>
+            <td>Kelas D101</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td colspan="2" style="background-color: #0763bf !important;border-color: #E0E08D !important;color:#ffffff !important"  class='open-detail-jadwal' data-id='1064'><strong>Fisika Matematika II</strong><br>10:00:00 - 11:40:00 WIB<br>Ajeng Eliyana, S.Si., M.Si. <br>FI</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td colspan="2" style="background-color: #0763bf !important;border-color: #E0E08D !important;color:#ffffff !important"  class='open-detail-jadwal' data-id='1064'><strong>Fisika Matematika II</strong><br>13:00:00 - 14:40:00 WIB<br>Ajeng Eliyana, S.Si., M.Si. <br>FI</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td colspan="2" style="background-color: #41b4c7 !important;border-color: #E0E08D !important;color:#faf2f2 !important"  class='open-detail-jadwal' data-id='1166'><strong>Sistem Perumahan</strong><br>10:00:00 - 11:40:00 WIB<br>Ir. Nia K. Pontoh, MSA<br>PWK</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+         </tr>
+         <tr>
+            <td>23</td>
+            <td>Kelas D102</td>
+            <td colspan="2" style="background-color: #008080 !important;border-color: #E0E08D !important;color:#f0eaea !important"  class='open-detail-jadwal' data-id='1139'><strong>Geofisika Ekonomi & Manajemen</strong><br>07:00:00 - 08:40:00 WIB<br>Megawati, S.Si., M.Sc.<br>TG</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td colspan="3" style="background-color: #bdb9b9 !important;border-color: #E0E08D !important;color:#000000 !important"  class='open-detail-jadwal' data-id='1066'><strong>Hitung Perataan II</strong><br>13:00:00 - 15:30:00 WIB<br>Tika Widayanti, M.Si <br>GT</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td colspan="3" style="background-color: #bdb9b9 !important;border-color: #E0E08D !important;color:#000000 !important"  class='open-detail-jadwal' data-id='1069'><strong>Basis Data Spasial</strong><br>09:00:00 - 11:30:00 WIB<br>Rajif Agung Yunmar, S.Kom., M.Cs.<br>GT</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td colspan="2" style="background-color: #41b4c7 !important;border-color: #E0E08D !important;color:#faf2f2 !important"  class='open-detail-jadwal' data-id='1167'><strong>Sistem Perumahan</strong><br>10:00:00 - 11:40:00 WIB<br>Shahnaz Nabila Fuady, S.T., M.T.<br>PWK</td>
+            <td   ></td>
+            <td   ></td>
+            <td colspan="3" style="background-color: #bdb9b9 !important;border-color: #E0E08D !important;color:#000000 !important"  class='open-detail-jadwal' data-id='1086'><strong>Survei Satelit</strong><br>14:00:00 - 16:30:00 WIB<br>Ir. Agoes Soedomo, M.T.<br>GT</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+         </tr>
+         <tr>
+            <td>24</td>
+            <td>Kelas D103</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td colspan="2" style="background-color: #41b4c7 !important;border-color: #E0E08D !important;color:#faf2f2 !important"  class='open-detail-jadwal' data-id='1171'><strong>Metode Analisis Perencanaan II</strong><br>13:00:00 - 14:40:00 WIB<br>Helmia Adita Fitra, S.T., M.T.<br>PWK</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td colspan="3" style="background-color: #249211 !important;border-color: #E0E08D !important;color:#000000 !important"  class='open-detail-jadwal' data-id='1115'><strong>MK Pilihan Petrologi</strong><br>14:00:00 - 16:30:00 WIB<br>Danni Gathot Harbowo, S.Si., M.T.<br>GL</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td colspan="2" style="background-color: #040692 !important;border-color: #E0E08D !important;color:#ffffff !important"  class='open-detail-jadwal' data-id='1138'><strong>Agama dan Etika Islam</strong><br>07:00:00 - 08:40:00 WIB<br>Dr. Idrus Ruslan, M.Ag.<br>TPB</td>
+            <td   ></td>
+            <td colspan="2" style="background-color: #41b4c7 !important;border-color: #E0E08D !important;color:#faf2f2 !important"  class='open-detail-jadwal' data-id='1171'><strong>Metode Analisis Perencanaan II</strong><br>10:00:00 - 11:40:00 WIB<br>Helmia Adita Fitra, S.T., M.T.<br>PWK</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td colspan="2" style="background-color: #008080 !important;border-color: #E0E08D !important;color:#f0eaea !important"  class='open-detail-jadwal' data-id='1145'><strong>Tektonofisik</strong><br>15:00:00 - 16:40:00 WIB<br>Luhut Pardamean Siringoringo, S.T., M.T.<br>TG</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+         </tr>
+         <tr>
+            <td>25</td>
+            <td>Kelas D104</td>
+            <td   ></td>
+            <td colspan="4" style="background-color: #bdb9b9 !important;border-color: #E0E08D !important;color:#000000 !important"  class='open-detail-jadwal' data-id='1067'><strong>Geodesi Geometrik</strong><br>08:00:00 - 11:20:00 WIB<br>Prof. Dr. Joenil Kahar<br>GT</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td colspan="3" style="background-color: #272cba !important;border-color: #E0E08D !important;color:#ffffff !important"  class='open-detail-jadwal' data-id='1106'><strong>Sinyal dan Sistem</strong><br>13:00:00 - 15:30:00 WIB<br>Muhammad Reza Kahar Aziz, S.T., M.T., Ph.D.<br>EL</td>
+            <td colspan="3" style="background-color: #272cba !important;border-color: #E0E08D !important;color:#ffffff !important"  class='open-detail-jadwal' data-id='1108'><strong>Matematika Teknik II</strong><br>16:00:00 - 18:30:00 WIB<br>Kiki Kananda, M.T.<br>EL</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td colspan="2" style="background-color: #bdb9b9 !important;border-color: #E0E08D !important;color:#000000 !important"  class='open-detail-jadwal' data-id='1112'><strong>Pengantar Surveying</strong><br>08:00:00 - 09:40:00 WIB<br>Nirmawana Simarmata, S.Pd., M.Sc.<br>GT</td>
+            <td colspan="2" style="background-color: #008080 !important;border-color: #E0E08D !important;color:#f0eaea !important"  class='open-detail-jadwal' data-id='1104'><strong>Teori Potensial</strong><br>10:00:00 - 11:40:00 WIB<br>Restu Almiati, S.Si., M.T.<br>TG</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+         </tr>
+         <tr>
+            <td>26</td>
+            <td>Kelas D107</td>
+            <td   ></td>
+            <td   ></td>
+            <td colspan="3" style="background-color: #008080 !important;border-color: #E0E08D !important;color:#f0eaea !important"  class='open-detail-jadwal' data-id='1100'><strong>Gelombang Dalam Geofisika</strong><br>09:00:00 - 11:30:00 WIB<br>Reza Rizki, S.T., M.T.<br>TG</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+         </tr>
+         <tr>
+            <td>27</td>
+            <td>Kelas D108</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td colspan="3" style="background-color: #bdb9b9 !important;border-color: #E0E08D !important;color:#000000 !important"  class='open-detail-jadwal' data-id='1076'><strong>Fotogrametri I</strong><br>07:00:00 - 09:30:00 WIB<br>Agung Pandi Nugroho, S.T., M.T.<br>GT</td>
+            <td colspan="2" style="background-color: #ce741d !important;border-color: #E0E08D !important;color:#000000 !important"  class='open-detail-jadwal' data-id='1148'><strong>Algoritma dan Struktur Data</strong><br>10:00:00 - 11:40:00 WIB<br>Rahman Indra Kesuma, S.Kom. M.Cs.<br>IF</td>
+            <td   ></td>
+            <td colspan="3" style="background-color: #ff1493 !important;border-color: #E0E08D !important;color:#000000 !important"  class='open-detail-jadwal' data-id='1111'><strong>Analisis Mengenai Dampak Lingkungan</strong><br>13:00:00 - 15:30:00 WIB<br>Dr. Endro Prasetyo, M.Sc.<br>TL</td>
+            <td   ></td>
+            <td   ></td>
+            <td colspan="2" style="background-color: #ce741d !important;border-color: #E0E08D !important;color:#000000 !important"  class='open-detail-jadwal' data-id='1148'><strong>Algoritma dan Struktur Data</strong><br>07:00:00 - 08:40:00 WIB<br>Rahman Indra Kesuma, S.Kom. M.Cs.<br>IF</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td colspan="3" style="background-color: #008080 !important;border-color: #E0E08D !important;color:#f0eaea !important"  class='open-detail-jadwal' data-id='1109'><strong>Komputasi Geofisika</strong><br>13:00:00 - 15:30:00 WIB<br>Ruhul Firdaus, S.T., M.T.<br>TG</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td colspan="3" style="background-color: #272cba !important;border-color: #E0E08D !important;color:#ffffff !important"  class='open-detail-jadwal' data-id='1113'><strong>Sistem Tenaga Elektrik</strong><br>14:00:00 - 16:30:00 WIB<br>Dean Corio, S.T., M.T.<br>EL</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+         </tr>
+         <tr>
+            <td>28</td>
+            <td>Kelas D109</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+         </tr>
+         <tr>
+            <td>29</td>
+            <td>Kelas D201</td>
+            <td colspan="2" style="background-color: #41b4c7 !important;border-color: #E0E08D !important;color:#faf2f2 !important"  class='open-detail-jadwal' data-id='1162'><strong>Tata Guna Lahan</strong><br>07:00:00 - 08:40:00 WIB<br>Dwi Bayu Prasetya, S.Si., M. Eng.<br>PWK</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+         </tr>
+         <tr>
+            <td>30</td>
+            <td>Kelas D202</td>
+            <td colspan="3" style="background-color: #41b4c7 !important;border-color: #E0E08D !important;color:#faf2f2 !important"  class='open-detail-jadwal' data-id='1173'><strong>Studio Proses Perencanaan</strong><br>07:00:00 - 09:30:00 WIB<br>Dr. Citra Persada<br>PWK</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td colspan="2" style="background-color: #0763bf !important;border-color: #E0E08D !important;color:#ffffff !important"  class='open-detail-jadwal' data-id='1088'><strong>Nano Material</strong><br>07:00:00 - 08:40:00 WIB<br>Ajeng Eliyana, S.Si., M.Si. <br>FI</td>
+            <td colspan="3" style="background-color: #0763bf !important;border-color: #E0E08D !important;color:#ffffff !important"  class='open-detail-jadwal' data-id='1072'><strong>Optika</strong><br>09:00:00 - 11:30:00 WIB<br>Deska Lismawenning, S.Si., M.Sc.<br>FI</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+         </tr>
+         <tr>
+            <td>31</td>
+            <td>Kelas D203</td>
+            <td colspan="3" style="background-color: #0763bf !important;border-color: #E0E08D !important;color:#ffffff !important"  class='open-detail-jadwal' data-id='1075'><strong>Fisika Modern</strong><br>07:00:00 - 09:30:00 WIB<br>Azrul Sulaiman Karim Pohan, S.Si., M.Si.<br>FI</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td colspan="2" style="background-color: #0763bf !important;border-color: #E0E08D !important;color:#ffffff !important"  class='open-detail-jadwal' data-id='1065'><strong>Pengantar Teori Relativitas Umum</strong><br>15:00:00 - 16:40:00 WIB<br>Azrul Sulaiman Karim Pohan, S.Si., M.Si.<br>FI</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td colspan="2" style="background-color: #0763bf !important;border-color: #E0E08D !important;color:#ffffff !important"  class='open-detail-jadwal' data-id='1085'><strong>Elektronika Lanjut</strong><br>16:00:00 - 17:40:00 WIB<br>Tri Siswandi Syahputra, S.Si, M.Si.<br>FI</td>
+            <td   ></td>
+            <td colspan="2" style="background-color: #bdb9b9 !important;border-color: #E0E08D !important;color:#000000 !important"  class='open-detail-jadwal' data-id='1080'><strong>Survei Lingkungan Pesisir</strong><br>08:00:00 - 09:40:00 WIB<br>Nurul Qamilah, S.Pd., M.Si.<br>GT</td>
+            <td colspan="2" style="background-color: #bdb9b9 !important;border-color: #E0E08D !important;color:#000000 !important"  class='open-detail-jadwal' data-id='1095'><strong>Kadaster Multiguna</strong><br>10:00:00 - 11:40:00 WIB<br>Nurul Qamilah, S.Pd., M.Si.<br>GT</td>
+            <td   ></td>
+            <td colspan="2" style="background-color: #bdb9b9 !important;border-color: #E0E08D !important;color:#000000 !important"  class='open-detail-jadwal' data-id='1093'><strong>Aspek Teknik Hukum Laut</strong><br>13:00:00 - 14:40:00 WIB<br>Nurul Qamilah, S.Pd., M.Si.<br>GT</td>
+            <td colspan="2" style="background-color: #bdb9b9 !important;border-color: #E0E08D !important;color:#000000 !important"  class='open-detail-jadwal' data-id='1096'><strong>Survei Hidro-Akustik</strong><br>15:00:00 - 16:40:00 WIB<br>Agung Pandi Nugroho, S.T., M.T.<br>GT</td>
+            <td   ></td>
+            <td colspan="3" style="background-color: #ce741d !important;border-color: #E0E08D !important;color:#000000 !important"  class='open-detail-jadwal' data-id='1158'><strong>Kriptografi (Pilihan)</strong><br>07:00:00 - 09:30:00 WIB<br>Ardiansyah, ST, M.Eng, CCAI<br>IF</td>
+            <td colspan="3" style="background-color: #008080 !important;border-color: #E0E08D !important;color:#f0eaea !important"  class='open-detail-jadwal' data-id='1128'><strong>Akusisi & Pengolahan Data Seismik Refleksi</strong><br>10:00:00 - 12:30:00 WIB<br>Ruhul Firdaus, S.T., M.T.<br>TG</td>
+            <td colspan="2" style="background-color: #0763bf !important;border-color: #E0E08D !important;color:#ffffff !important"  class='open-detail-jadwal' data-id='1085'><strong>Elektronika Lanjut</strong><br>13:00:00 - 14:40:00 WIB<br>Tri Siswandi Syahputra, S.Si, M.Si.<br>FI</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+         </tr>
+         <tr>
+            <td>32</td>
+            <td>Kelas D204</td>
+            <td   ></td>
+            <td colspan="3" style="background-color: #ce741d !important;border-color: #E0E08D !important;color:#000000 !important"  class='open-detail-jadwal' data-id='1156'><strong>Basis Data</strong><br>08:00:00 - 10:30:00 WIB<br>Rajif Agung Yunmar, S.Kom., M.Cs.<br>IF</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td colspan="3" style="background-color: #0763bf !important;border-color: #E0E08D !important;color:#ffffff !important"  class='open-detail-jadwal' data-id='1081'><strong>Sistem Logika dan Digital</strong><br>09:00:00 - 11:30:00 WIB<br>Mahardika Yoga Darmawan, S.T., M.Sc.<br>FI</td>
+            <td   ></td>
+            <td colspan="3" style="background-color: #272cba !important;border-color: #E0E08D !important;color:#ffffff !important"  class='open-detail-jadwal' data-id='1125'><strong>Sistem Instrumentasi</strong><br>13:00:00 - 15:30:00 WIB<br>Harry Yuliansyah, S.T., M.Eng. <br>EL</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td colspan="3" style="background-color: #008080 !important;border-color: #E0E08D !important;color:#f0eaea !important"  class='open-detail-jadwal' data-id='1126'><strong>Geostatistik</strong><br>07:00:00 - 09:30:00 WIB<br>Handoyo, S.Si., M.T.<br>TG</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td colspan="3" style="background-color: #008080 !important;border-color: #E0E08D !important;color:#f0eaea !important"  class='open-detail-jadwal' data-id='1129'><strong>Inversi Geofisika</strong><br>14:00:00 - 16:30:00 WIB<br>Restu Almiati, S.Si., M.T.<br>TG</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+         </tr>
+         <tr>
+            <td>33</td>
+            <td>Kelas D205</td>
+            <td colspan="1" style="background-color: #272cba !important;border-color: #E0E08D !important;color:#ffffff !important"  class='open-detail-jadwal' data-id='1118'><strong>Praktikum Pemecahan Masalah Dengan C</strong><br>07:00:00 - 07:50:00 WIB<br>Harry Yuliansyah, S.T., M.Eng. <br>EL</td>
+            <td   ></td>
+            <td   ></td>
+            <td colspan="3" style="background-color: #272cba !important;border-color: #E0E08D !important;color:#ffffff !important"  class='open-detail-jadwal' data-id='1103'><strong>Medan Elektromagnetik</strong><br>10:00:00 - 12:30:00 WIB<br>Muhammad Reza Kahar Aziz, S.T., M.T., Ph.D.<br>EL</td>
+            <td colspan="3" style="background-color: #272cba !important;border-color: #E0E08D !important;color:#ffffff !important"  class='open-detail-jadwal' data-id='1101'><strong>Pemecahan Masalah Dengan C</strong><br>13:00:00 - 15:30:00 WIB<br>Harry Yuliansyah, S.T., M.Eng. <br>EL</td>
+            <td   ></td>
+            <td   ></td>
+            <td colspan="2" style="background-color: #0763bf !important;border-color: #E0E08D !important;color:#ffffff !important"  class='open-detail-jadwal' data-id='1068'><strong>Listrik Magnet</strong><br>07:00:00 - 08:40:00 WIB<br>Mohamad Samsul Anrokhi,S.Si., M.Si. <br>FI</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td colspan="3" style="background-color: #272cba !important;border-color: #E0E08D !important;color:#ffffff !important"  class='open-detail-jadwal' data-id='1099'><strong>Elektronika</strong><br>09:00:00 - 11:30:00 WIB<br>Efa Maydhona Saputra, S.T., M.T.<br>EL</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td colspan="2" style="background-color: #0763bf !important;border-color: #E0E08D !important;color:#ffffff !important"  class='open-detail-jadwal' data-id='1068'><strong>Listrik Magnet</strong><br>15:00:00 - 16:40:00 WIB<br>Mohamad Samsul Anrokhi,S.Si., M.Si. <br>FI</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td colspan="3" style="background-color: #272cba !important;border-color: #E0E08D !important;color:#ffffff !important"  class='open-detail-jadwal' data-id='1105'><strong>Sistem Penggerak Elektrik</strong><br>09:00:00 - 11:30:00 WIB<br>Dean Corio, S.T., M.T.<br>EL</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td colspan="2" style="background-color: #ce741d !important;border-color: #E0E08D !important;color:#000000 !important"  class='open-detail-jadwal' data-id='1160'><strong>Dasar Rekayasa Perangkat Lunak</strong><br>07:00:00 - 08:40:00 WIB<br>Hafiz Budi Firmansyah, S.Kom, M.Sc<br>IF</td>
+            <td colspan="3" style="background-color: #ce741d !important;border-color: #E0E08D !important;color:#000000 !important"  class='open-detail-jadwal' data-id='1147'><strong>Teknologi Basis Data</strong><br>09:00:00 - 11:30:00 WIB<br>Ahmad Luky Ramdani<br>IF</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+         </tr>
+         <tr>
+            <td>34</td>
+            <td>Kelas D210</td>
+            <td colspan="3" style="background-color: #008080 !important;border-color: #E0E08D !important;color:#f0eaea !important"  class='open-detail-jadwal' data-id='1124'><strong>Gaya Berat dan Magnet</strong><br>07:00:00 - 09:30:00 WIB<br>Gestin Mey Ekawati, S.T., M.T.<br>TG</td>
+            <td colspan="2" style="background-color: #bdb9b9 !important;border-color: #E0E08D !important;color:#000000 !important"  class='open-detail-jadwal' data-id='1091'><strong>Estimasi dan Aproksimasi Geodetik</strong><br>10:00:00 - 11:40:00 WIB<br>Tika Widayanti, M.Si <br>GT</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td colspan="2" style="background-color: #41b4c7 !important;border-color: #E0E08D !important;color:#faf2f2 !important"  class='open-detail-jadwal' data-id='1164'><strong>Pengantar Infrastruktur Wilayah dan Kota</strong><br>10:00:00 - 11:40:00 WIB<br>Shahnaz Nabila Fuady, S.T., M.T.<br>PWK</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td colspan="3" style="background-color: #040692 !important;border-color: #E0E08D !important;color:#ffffff !important"  class='open-detail-jadwal' data-id='1107'><strong>Manajemen Proyek</strong><br>13:00:00 - 15:30:00 WIB<br>Winny Novalina, S.T., M.T.<br>TPB</td>
+            <td   ></td>
+            <td   ></td>
+            <td colspan="3" style="background-color: #ce741d !important;border-color: #E0E08D !important;color:#000000 !important"  class='open-detail-jadwal' data-id='1150'><strong>Teori Bahasa Formal dan Otomata</strong><br>07:00:00 - 09:30:00 WIB<br>Rahman Indra Kesuma, S.Kom. M.Cs.<br>IF</td>
+            <td colspan="3" style="background-color: #ce741d !important;border-color: #E0E08D !important;color:#000000 !important"  class='open-detail-jadwal' data-id='1155'><strong>Grafika Komputer</strong><br>10:00:00 - 12:30:00 WIB<br>Arkham Zahri Rakhman, S.Kom., M.Eng.<br>IF</td>
+            <td   ></td>
+            <td   ></td>
+            <td colspan="3" style="background-color: #bdb9b9 !important;border-color: #E0E08D !important;color:#000000 !important"  class='open-detail-jadwal' data-id='1087'><strong>Kemah Kerja</strong><br>15:00:00 - 17:30:00 WIB<br>Arif Rohman, S.T., M.T. <br>GT</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+         </tr>
+         <tr>
+            <td>35</td>
+            <td>Kelas D211</td>
+            <td   ></td>
+            <td   ></td>
+            <td colspan="3" style="background-color: #ce741d !important;border-color: #E0E08D !important;color:#000000 !important"  class='open-detail-jadwal' data-id='1154'><strong>Sistem Informasi</strong><br>09:00:00 - 11:30:00 WIB<br>Raidah Hanifah, S.T., M.T.<br>IF</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td colspan="2" style="background-color: #41b4c7 !important;border-color: #E0E08D !important;color:#faf2f2 !important"  class='open-detail-jadwal' data-id='1165'><strong>Pengantar Infrastruktur Wilayah dan Kota</strong><br>10:00:00 - 11:40:00 WIB<br>Hendro Muliarto, S.T., M.T.<br>PWK</td>
+            <td   ></td>
+            <td colspan="2" style="background-color: #0763bf !important;border-color: #E0E08D !important;color:#ffffff !important"  class='open-detail-jadwal' data-id='1070'><strong>Aplikasi Nuklir di Industri</strong><br>13:00:00 - 14:40:00 WIB<br>Tri Siswandi Syahputra, S.Si, M.Si.<br>FI</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td colspan="2" style="background-color: #41b4c7 !important;border-color: #E0E08D !important;color:#faf2f2 !important"  class='open-detail-jadwal' data-id='1163'><strong>Tata Guna Lahan</strong><br>13:00:00 - 14:40:00 WIB<br>Asirin, S.T., M.T.<br>PWK</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td colspan="2" style="background-color: #bdb9b9 !important;border-color: #E0E08D !important;color:#000000 !important"  class='open-detail-jadwal' data-id='1094'><strong>Penetapan Batas Laut Negara & Daerah</strong><br>07:00:00 - 08:40:00 WIB<br>Nurul Qamilah, S.Pd., M.Si.<br>GT</td>
+            <td   ></td>
+            <td colspan="2" style="background-color: #bdb9b9 !important;border-color: #E0E08D !important;color:#000000 !important"  class='open-detail-jadwal' data-id='1084'><strong>Kadaster Legal</strong><br>10:00:00 - 11:40:00 WIB<br>Nurul Qamilah, S.Pd., M.Si.<br>GT</td>
+            <td   ></td>
+            <td colspan="3" style="background-color: #ce741d !important;border-color: #E0E08D !important;color:#000000 !important"  class='open-detail-jadwal' data-id='1157'><strong>Socio Informatika dan Profesionalisme</strong><br>13:00:00 - 15:30:00 WIB<br>Hafiz Budi Firmansyah, S.Kom, M.Sc<br>IF</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+         </tr>
+         <tr>
+            <td>36</td>
+            <td>Kelas D212</td>
+            <td   ></td>
+            <td   ></td>
+            <td colspan="3" style="background-color: #41b4c7 !important;border-color: #E0E08D !important;color:#faf2f2 !important"  class='open-detail-jadwal' data-id='1159'><strong>Ekonomi Wilayah dan Kota</strong><br>09:00:00 - 11:30:00 WIB<br>Asirin, S.T., M.T.<br>PWK</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td colspan="3" style="background-color: #ce741d !important;border-color: #E0E08D !important;color:#000000 !important"  class='open-detail-jadwal' data-id='1149'><strong>Pemrograman Berorientasi Obyek</strong><br>07:00:00 - 09:30:00 WIB<br>Arkham Zahri Rakhman, S.Kom., M.Eng.<br>IF</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td colspan="2" style="background-color: #008080 !important;border-color: #E0E08D !important;color:#f0eaea !important"  class='open-detail-jadwal' data-id='1122'><strong>Geodinamika</strong><br>13:00:00 - 14:40:00 WIB<br>Gestin Mey Ekawati, S.T., M.T.<br>TG</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td colspan="3" style="background-color: #0763bf !important;border-color: #E0E08D !important;color:#ffffff !important"  class='open-detail-jadwal' data-id='1078'><strong>Metode Pengukuran dan Pengolahan Data</strong><br>08:00:00 - 10:30:00 WIB<br>Muhamad Ragil Setiawan, S.Pd., M.Sc.<br>FI</td>
+            <td colspan="2" style="background-color: #bdb9b9 !important;border-color: #E0E08D !important;color:#000000 !important"  class='open-detail-jadwal' data-id='1097'><strong>Perek. Pemb. Wil. Pesisir & Laut</strong><br>11:00:00 - 12:40:00 WIB<br>Agung Pandi Nugroho, S.T., M.T.<br>GT</td>
+            <td colspan="3" style="background-color: #008080 !important;border-color: #E0E08D !important;color:#f0eaea !important"  class='open-detail-jadwal' data-id='1130'><strong>Volkanologi dan Geothermal</strong><br>13:00:00 - 15:30:00 WIB<br>Reza Rizki, S.T., M.T.<br>TG</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td colspan="3" style="background-color: #272cba !important;border-color: #E0E08D !important;color:#ffffff !important"  class='open-detail-jadwal' data-id='1114'><strong>Sistem Kendali</strong><br>08:00:00 - 10:30:00 WIB<br>Rudi Uswarman, S.T., M. Eng.<br>EL</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td colspan="3" style="background-color: #272cba !important;border-color: #E0E08D !important;color:#ffffff !important"  class='open-detail-jadwal' data-id='1116'><strong>Sistem Komunikasi</strong><br>14:00:00 - 16:30:00 WIB<br>Muhammad Reza Kahar Aziz, S.T., M.T., Ph.D.<br>EL</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+         </tr>
+         <tr>
+            <td>37</td>
+            <td>Kelas D213</td>
+            <td   ></td>
+            <td   ></td>
+            <td colspan="3" style="background-color: #41b4c7 !important;border-color: #E0E08D !important;color:#faf2f2 !important"  class='open-detail-jadwal' data-id='1161'><strong>Ekonomi Wilayah dan Kota</strong><br>09:00:00 - 11:30:00 WIB<br>Zulqadri Ansar, S.T., M.T.<br>PWK</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td colspan="3" style="background-color: #ce741d !important;border-color: #E0E08D !important;color:#000000 !important"  class='open-detail-jadwal' data-id='1146'><strong>Pemrograman Berorientasi Obyek</strong><br>13:00:00 - 15:30:00 WIB<br>Arkham Zahri Rakhman, S.Kom., M.Eng.<br>IF</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td colspan="2" style="background-color: #bdb9b9 !important;border-color: #E0E08D !important;color:#000000 !important"  class='open-detail-jadwal' data-id='1082'><strong>Pencitraan Bawah Air</strong><br>10:00:00 - 11:40:00 WIB<br>Nirmawana Simarmata, S.Pd., M.Sc.<br>GT</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td colspan="2" style="background-color: #41b4c7 !important;border-color: #E0E08D !important;color:#faf2f2 !important"  class='open-detail-jadwal' data-id='1172'><strong>Metode Analisis Perencanaan II</strong><br>10:00:00 - 11:40:00 WIB<br>Asirin, S.T., M.T.<br>PWK</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td colspan="2" style="background-color: #41b4c7 !important;border-color: #E0E08D !important;color:#faf2f2 !important"  class='open-detail-jadwal' data-id='1172'><strong>Metode Analisis Perencanaan II</strong><br>15:00:00 - 16:40:00 WIB<br>Asirin, S.T., M.T.<br>PWK</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+         </tr>
+         <tr>
+            <td>38</td>
+            <td>Kelas D214</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+         </tr>
+         <tr>
+            <td>39</td>
+            <td>Studio Gambar 1</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+         </tr>
+         <tr>
+            <td>40</td>
+            <td>Studio Gambar 2</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td colspan="2" style="background-color: #bdb9b9 !important;border-color: #E0E08D !important;color:#000000 !important"  class='open-detail-jadwal' data-id='1073'><strong>Administrasi Pertanahan I</strong><br>13:00:00 - 14:40:00 WIB<br>Nirmawana Simarmata, S.Pd., M.Sc.<br>GT</td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+            <td   ></td>
+         </tr>
+      </tbody>
+   </table>
+</div>
+
+
+						<br>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <script type="text/javascript">
+	    /*
+          $(document).ready(function () {
+	        gridviewScroll();
+	    });
+	
+	    function gridviewScroll() {
+	        $('#GridView1').gridviewScroll({
+                width: 750,
+                height: 550,
+                railcolor: "#F0F0F0",
+                barcolor: "#CDCDCD",
+                barhovercolor: "#606060",
+                bgcolor: "#F0F0F0",
+                freezesize: 2,
+                arrowsize: 30, 
+                varrowtopimg: "Images/arrowvt.png",
+                varrowbottomimg: "Images/arrowvb.png",
+                harrowleftimg: "Images/arrowhl.png",
+                harrowrightimg: "Images/arrowhr.png",
+                headerrowcount: 2
+            });
+	    }
+          */
+	</script>
+</body>
+</html>

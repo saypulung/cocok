@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Output dJantjoooggg</title>
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet"> 
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<style type="text/css">
+		body{
+			font-family: 'Roboto', sans-serif;
+			/*background: url(bg.jpg) no-repeat center;
+			/*
+			-webkit-filter: blur(5px);
+  			-moz-filter: blur(5px);
+            -o-filter: blur(5px);
+            -ms-filter: blur(5px);
+  			fiter: blur(5px);
+  			*/
+		}
+		.background-image {
+		  background-image: url(bg.jpg);
+		  display: block;
+		  filter: blur(5px);
+		  -webkit-filter: blur(5px);
+		  height: 100%;
+		  left: 0;
+		  position: fixed;
+		  right: 0;
+		  z-index: -1;
+		  background-position: center; 
+		}
+		table{
+			box-shadow: 5px 5px 10px #000000;
+		}
+		table, td, th {    
+		    border: 1px solid rgba(12,12,12,0.5) /*#ccc*/;
+		    text-align: left;
+		}
+
+		table {
+		    border-collapse: collapse;
+		    width: 100%;
+		}
+		/*
+		tbody tr:nth-child(2n) {
+		  background-color: rgba(126, 117, 117, 0.9);
+
+		}*/
+		th, td {
+		    padding: 15px;
+		    font-size: 18px;
+		}
+		th{
+			background-color: rgba(2, 117, 216,0.9);
+			color:#fff;
+			font-weight: 700;
+			font-size: 20px;
+		}
+		tbody tr{
+			
+			background-color: rgba(29, 86, 68, 0.9);
+			color:#fff;
+		}
+		tbody tr th{
+			border-bottom: 5px solid #000;
+		}
+		tbody tr.cancel{
+			background-color: rgba(217, 83, 79,0.9);
+			color:#fff;
+		}
+		tbody tr.pindah{
+			background-color: rgb(240, 173, 78, 0.9);
+			color:#fff;
+		}
+		tbody tr:hover{
+			background-color: #bbb;
+			color:#000;
+		}
+		.btn-float{
+			position: absolute;
+			top: 0;
+			right: 0;
+			margin-right: 20px;
+			margin-top: 10px;
+			float: right;
+		}
+		.dialog-show{
+			padding: 15px;
+			background-color: #0275D8;
+			float: right;
+			text-transform: none;
+			text-decoration: none;
+			box-shadow: 2px 2px 4px #000000;
+			color:#fff;
+			font-weight: 500;
+			margin-right: 10px;
+		}
+		.dialog-show:hover{
+			background-color: #165892;
+
+		}
+		.container{
+			display: block;
+			padding-top:15px;
+
+		}
+		.tanggal{
+			font-weight: 500;
+			color:#0275D8;
+			
+			font-size: 30px;
+			padding-bottom: 20px;
+			-webkit-text-fill-color: #0275D8; /* Will override color (regardless of order) */
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: white;
+
+            -moz-text-fill-color: #0275D8; /* Will override color (regardless of order) */
+            -moz-text-stroke-width: 1px;
+            -moz-text-stroke-color: white;
+		}
+
+		/* The Modal (background) */
+		.modal {
+		    display: none; /* Hidden by default */
+		    position: fixed; /* Stay in place */
+		    z-index: 1; /* Sit on top */
+		    padding-top: 100px; /* Location of the box */
+		    left: 0;
+		    top: 0;
+		    width: 100%; /* Full width */
+		    height: 100%; /* Full height */
+		    overflow: auto; /* Enable scroll if needed */
+		    background-color: rgb(0,0,0); /* Fallback color */
+		    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+		}
+
+		/* Modal Content */
+		.modal-content {
+		    position: relative;
+		    background-color: #fefefe;
+		    margin: auto;
+		    padding: 0;
+		    border: 1px solid #888;
+		    width: 40%;
+		    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+		    -webkit-animation-name: animatetop;
+		    -webkit-animation-duration: 0.4s;
+		    animation-name: animatetop;
+		    animation-duration: 0.4s
+		}
+
+		/* Add Animation */
+		@-webkit-keyframes animatetop {
+		    from {top:-300px; opacity:0} 
+		    to {top:0; opacity:1}
+		}
+
+		@keyframes animatetop {
+		    from {top:-300px; opacity:0}
+		    to {top:0; opacity:1}
+		}
+
+		/* The Close Button */
+		.close {
+		    color: white;
+		    float: right;
+		    font-size: 28px;
+		    font-weight: bold;
+		}
+
+		.close:hover,
+		.close:focus {
+		    color: #000;
+		    text-decoration: none;
+		    cursor: pointer;
+		}
+
+		.modal-header {
+		    padding: 2px 16px;
+		    background-color: #5cb85c;
+		    color: white;
+		}
+
+		.modal-body {padding: 2px 16px;}
+
+		.modal-footer {
+		    padding: 2px 16px;
+		    background-color: #eee;
+		    color: white;
+		}
+		input[type=text], select {
+		    width: 100%;
+		    padding: 10px 10px;
+		    margin: 8px 0;
+		    display: inline-block;
+		    border: 1px solid #ccc;
+		    border-radius: 4px;
+		    box-sizing: border-box;
+		}
+		label{
+			margin-top: 10px;
+			font-weight: bold;
+			font-size: 16px;
+		}
+		input[type=submit] {
+		    width: 100%;
+		    background-color: #4CAF50;
+		    color: white;
+		    padding: 14px 20px;
+		    margin: 8px 0;
+		    border: none;
+		    border-radius: 4px;
+		    cursor: pointer;
+		}
+		input[type=submit]:hover {
+		    background-color: #45a049;
+		}
+
+	</style>
+	<script>
+		$(document).ready(function(){
+			// Get the modal
+			var modal = document.getElementById('myModal');
+
+			// Get the button that opens the modal
+			var btn = document.getElementById("myBtn");
+
+			// Get the <span> element that closes the modal
+			var span = document.getElementsByClassName("close")[0];
+
+			// When the user clicks the button, open the modal 
+			btn.onclick = function() {
+			    modal.style.display = "block";
+			}
+
+			// When the user clicks on <span> (x), close the modal
+			span.onclick = function() {
+			    modal.style.display = "none";
+			}
+
+			// When the user clicks anywhere outside of the modal, close it
+			window.onclick = function(event) {
+			    if (event.target == modal) {
+			        modal.style.display = "none";
+			    }
+			}
+		});
+		
+	</script>
+
+</head>
+<body>
+<div class="background-image"></div>
+	<div class="btn-float">
+		<a href="javascript:;" class="dialog-show">Bantuan</a>
+		<a href="javascript:;" class="dialog-show" id="myBtn">Filter Jadwal</a>
+		
+	</div>
+	<div class="container">
+		<!-- The Modal -->
+		<div id="myModal" class="modal">
+
+		  <!-- Modal content -->
+		  <div class="modal-content">
+		    <div class="modal-header">
+		      <span class="close">&times;</span>
+		      <h2>Filter Jadwal</h2>
+		    </div>
+		    <div class="modal-body">
+		      <form action="" style="margin-top: 20px;">
+		      	 <label for="fname">Nama Dosen</label>
+    			 <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    			  <label for="fname">Ruangan</label>
+    			  <select id="country" name="country">
+				      <option value="australia">Australia</option>
+				      <option value="canada">Canada</option>
+				      <option value="usa">USA</option>
+				    </select>
+				<label for="fname">Hari</label>
+    			<select id="country" name="country">
+				      <option value="australia">Australia</option>
+				      <option value="canada">Canada</option>
+				      <option value="usa">USA</option>
+				    </select>
+				<label for="fname">Jam</label>
+    			<select id="country" name="country">
+				      <option value="australia">Australia</option>
+				      <option value="canada">Canada</option>
+				      <option value="usa">USA</option>
+				    </select>
+		      </form>
+		    </div>
+		    <div class="modal-footer">
+		    	<input type="submit" value="Filter" style="width: 200px" />
+		    </div>
+		  </div>
+
+		</div>
+
+		<div class="tanggal">
+			Senin, 5 Juli 2017
+		</div>
+		<table class="monitor-akademik" width="100%" border="1" cellspacing="0" cellpadding="0">
+			<thead>
+				<tr>
+					<th>Mata Kuliah</th>
+					<th>Dosen</th>
+					<th>Ruangan</th>
+					<th>Jam Mulai</th>
+					<th>Jam Selesai</th>
+					<th>Keterangan</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Jaringan &amp; Komunikasi Data 1</td>
+					<td>Rajiva, Ariefa, Vendetta</td>
+					<td>D102</td>
+					<td>08:00</td>
+					<td>09:00</td>
+					<td>-</td>
+				</tr>
+
+				<tr class="pindah">
+					<td>Jaringan &amp; Komunikasi Data 2</td>
+					<td>Rajiva, Ariefa, Vendetta</td>
+					<td>D102</td>
+					<td>08:00</td>
+					<td>09:00</td>
+					<td>Jadwal Pindah ke Ruangan D105</td>
+				</tr>
+				<tr class="cancel">
+					<td>Jaringan &amp; Komunikasi Data 3</td>
+					<td>Rajiva, Ariefa, Vendetta</td>
+					<td>D102</td>
+					<td>08:00</td>
+					<td>09:00</td>
+					<td>Jadwal dicancel</td>
+				</tr>
+				<tr class="">
+					<td>Jaringan &amp; Komunikasi Data 4</td>
+					<td>Rajiva, Ariefa, Vendetta</td>
+					<td>D102</td>
+					<td>08:00</td>
+					<td>09:00</td>
+					<td>-</td>
+				</tr>
+				<tr class="">
+					<td>Jaringan &amp; Komunikasi Data 5</td>
+					<td>Rajiva, Ariefa, Vendetta</td>
+					<td>D102</td>
+					<td>08:00</td>
+					<td>09:00</td>
+					<td>-</td>
+				</tr>
+				<tr class="">
+					<td>Jaringan &amp; Komunikasi Data 6</td>
+					<td>Rajiva, Ariefa, Vendetta</td>
+					<td>D102</td>
+					<td>08:00</td>
+					<td>09:00</td>
+					<td>-</td>
+				</tr>
+				<tr class="cancel">
+					<td>Jaringan &amp; Komunikasi Data 7</td>
+					<td>Rajiva, Ariefa, Vendetta</td>
+					<td>D102</td>
+					<td>08:00</td>
+					<td>09:00</td>
+					<td>Jadwal dicancel</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="jos">
+		&nbsp;
+	</div>
+</body>
+</html>
